@@ -2314,7 +2314,7 @@
                     value: function() {
                         var e = this;
                         this._settings.area = this.size.width * this.size.height / 100,
-                        this._settings.count = Math.floor(Math.min(Math.max(40, this._settings.area / m.f.foodDensity), this._settings.count)),
+                        this._settings.count = Math.floor(Math.min(Math.max(0, this._settings.area / m.f.foodDensity), this._settings.count)),
                         this.updateText(),
                         clearTimeout(this.updateGlobalTimeout),
                         this.updateGlobalTimeout = setTimeout((function() {
@@ -4556,7 +4556,7 @@
             }, {
                 key: "calculateMaxFood",
                 value: function() {
-                    this.maxFoodCount = Math.floor(Math.min(Math.max(40, this.settings.area / d.f.foodDensity), this.settings.count + this.availableFoodCount))
+                    this.maxFoodCount = Math.floor(Math.min(Math.max(0, this.settings.area / d.f.foodDensity), this.settings.count + this.availableFoodCount))
                 }
             }]),
             i
