@@ -19010,7 +19010,7 @@
         m.API_URL = -1 == window.location.host.indexOf("localhost") ? "https://apibeta.deeeep.io" : "http://localhost:8091",
         m.isSsl = "https:" === window.location.protocol,
         m.deeeepPath = "https://beta.deeeep.io",
-        m.mapMakerPath = "https://deeeep.io/mapmaker",
+        m.mapMakerPath = "https://mapmaker.deeeep.io",
         m.version = "v0.1.8",
         m.subreddit = "https://www.reddit.com/r/deeeepiomapmaker",
         m.foodDensity = 12.3,
